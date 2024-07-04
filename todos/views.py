@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 
 class IndexView(generic.ListView):
     template_name = 'todos/index.html'
-    context_object_name = 'todo_list-Umair'
+    context_object_name = 'todo_list'
 
     def get_queryset(self):
         """Return all the latest todos."""
